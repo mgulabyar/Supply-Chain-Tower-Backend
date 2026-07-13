@@ -63,7 +63,6 @@ const Shipment = mongoose.model('Shipment', new mongoose.Schema({
 const OpenAI = require('openai');
 const openai = new OpenAI({ apiKey: process.env.OPENAI_API_KEY });
 
-// Routes
 app.get('/api/tower/summary', async (req, res) => {
   const inventory = await Inventory.find();
   const completion = await openai.chat.completions.create({
