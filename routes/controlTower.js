@@ -3,7 +3,7 @@ const Inventory = require('../models/Inventory');
 const Shipment = require('../models/Shipment');
 const { getPredictiveInsights } = require('../services/aiEngine');
 
-// GET: Aggregated Dashboard 
+// GET: Aggregated  
 router.get('/dashboard-summary', async (req, res) => {
   try {
     // MongoDB Aggregation: Puray warehouse ka total value aur critical items nikalna
