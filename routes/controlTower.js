@@ -6,7 +6,6 @@ const { getPredictiveInsights } = require('../services/aiEngine');
 // GET: Aggregated  
 router.get('/dashboard-summary', async (req, res) => {
   try {
-    // MongoDB   ka  
     const stats = await Inventory.aggregate([
       {
         $group: {
