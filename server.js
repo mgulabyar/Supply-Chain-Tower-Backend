@@ -14,10 +14,7 @@
 // app.use(express.json());
 // app.use('/api/tower', controlRoutes);
 
-// // Socket.io Real-time simulation
-// io.on('connection', (socket) => {
-//   console.log('Client connected to Tower Monitoring');
-  
+
 
 require('dotenv').config();
 const express = require('express');
