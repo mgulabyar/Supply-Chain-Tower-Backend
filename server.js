@@ -47,7 +47,6 @@ const io = new Server(server, { cors: { origin: "*" } });
 app.use(cors());
 app.use(express.json());
 
-// Models
 const Inventory = mongoose.model('Inventory', new mongoose.Schema({
   itemName: String,
   stock: Number,
