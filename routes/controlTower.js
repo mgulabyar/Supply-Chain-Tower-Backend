@@ -36,7 +36,6 @@ router.get('/dashboard-summary', async (req, res) => {
   }
 });
 
-// POST: Seed Data for testing
 router.post('/seed', async (req, res) => {
     await Inventory.create(req.body.inventory);
     await Shipment.create(req.body.shipments);
