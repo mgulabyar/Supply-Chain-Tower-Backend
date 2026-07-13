@@ -5,6 +5,7 @@ const InventorySchema = new mongoose.Schema({
     type: String,
     enum: ["Electronics", "Raw Material", "Finished Goods"],
   },
+  // sku: type: sr
   sku: { type: String, unique: true },
   currentStock: Number,
   reservedStock: Number, 
