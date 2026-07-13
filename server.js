@@ -30,8 +30,7 @@
 // });
 
 // mongoose.connect(process.env.MONGO_URI)
-//   .then(() => server.listen(5000, () => console.log('Tower Hub Online on Port 5000')))
-//   .catch(err => console.log(err));
+
 
 require('dotenv').config();
 const express = require('express');
