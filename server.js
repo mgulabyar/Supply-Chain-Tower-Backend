@@ -18,19 +18,6 @@
 // io.on('connection', (socket) => {
 //   console.log('Client connected to Tower Monitoring');
   
-//   // Simulate truck movement every 5 seconds
-//   setInterval(() => {
-//     socket.emit('shipmentUpdate', {
-//       id: "SHP-101",
-//       lat: 31.5204 + (Math.random() * 0.01),
-//       lng: 74.3587 + (Math.random() * 0.01),
-//       status: "In-Transit"
-//     });
-//   }, 5000);
-// });
-
-// mongoose.connect(process.env.MONGO_URI)
-
 
 require('dotenv').config();
 const express = require('express');
