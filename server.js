@@ -4,9 +4,7 @@
 // const http = require('http');
 // const { Server } = require('socket.io');
 // const cors = require('cors');
-// const controlRoutes = require('./routes/controlTower');
 
-// const app = express();
 
 
 
