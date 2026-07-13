@@ -59,7 +59,6 @@ const Shipment = mongoose.model('Shipment', new mongoose.Schema({
   id: String, lat: Number, lng: Number, status: String
 }));
 
-// AI Service (GPT-4o)
 const OpenAI = require('openai');
 const openai = new OpenAI({ apiKey: process.env.OPENAI_API_KEY });
 
