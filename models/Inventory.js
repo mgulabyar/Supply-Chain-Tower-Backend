@@ -1,5 +1,4 @@
 const mongoose = require("mongoose");
-// Inventory Schema: Represents items in the warehouse with stock levels, cost, and category.
 const InventorySchema = new mongoose.Schema({
   itemName: String,
   category: {
