@@ -83,7 +83,6 @@ app.post('/api/tower/seed', async (req, res) => {
     res.json({ message: "Seeded" });
 });
 
-// Socket Simulation
 io.on('connection', (socket) => {
   setInterval(() => {
     socket.emit('shipmentUpdate', {
