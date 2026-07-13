@@ -3,7 +3,6 @@ const Inventory = require('../models/Inventory');
 const Shipment = require('../models/Shipment');
 const { getPredictiveInsights } = require('../services/aiEngine');
 
-// GET: Aggregated  
 router.get('/dashboard-summary', async (req, res) => {
   try {
     const stats = await Inventory.aggregate([
@@ -22,7 +21,6 @@ router.get('/dashboard-summary', async (req, res) => {
     const shipments = await Shipment.find({ status: 'In-Transit' });
     const lowStockItems = await Inventory.find({ currentStock: { $lte: 50 } }); 
 
-    // AI Insight call for critical items
     let aiAdvise = "All clear.";
     if (lowStockItems.length > 0) {
       aiAdvise = await getPredictiveInsights(lowStockItems);
